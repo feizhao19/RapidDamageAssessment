@@ -2,7 +2,7 @@
 
 **ViPDE** (Visual Prompt Damage Evaluation) is a foundation model-based framework for post-disaster building damage assessment from remote sensing imagery.
 
-Given a pair of pre-disaster and post-disaster satellite images, ViPDE leverages visual prompt learning and contrastive feature analysis to generate a pixel-wise building damage map with four damage levels: No Damage, Minor Damage, Major Damage, and Destroyed..
+Given a pair of pre-disaster and post-disaster satellite images, ViPDE leverages visual prompt learning and contrastive feature analysis to generate a pixel-wise building damage map with four damage levels: No Damage, Minor Damage, Major Damage, and Destroyed.
 
 <small>
 
@@ -11,10 +11,9 @@ Given a pair of pre-disaster and post-disaster satellite images, ViPDE leverages
 </small>
 
 
-
 ## Sample test data
 
-Smoke-test image pair and model output for **Marquez Knolls, Pacific Palisades, Los Angeles, CA 90272** (~175 acres, Sunset Blvd–Marquez Ave corridor). Reference: 17080 Sunset Blvd, Pacific Palisades, CA 90272 (Self-Realization Fellowship Lake Shrine) — [open in Google Maps](https://www.google.com/maps/search/?api=1&query=17080+Sunset+Blvd,+Pacific+Palisades,+CA+90272).
+Example NOAA ERI image pair and ViPDE damage assessment result for the **Marquez Knolls neighborhood in Pacific Palisades, Los Angeles, California 90272** (~175 acres; [17080 Sunset Blvd, Pacific Palisades, CA 90272](https://www.google.com/maps/search/?api=1&query=17080+Sunset+Blvd,+Pacific+Palisades,+CA+90272)).
 
 | Pre-disaster | Post-disaster | Predicted damage overlay |
 |:---:|:---:|:---:|
@@ -162,7 +161,7 @@ python scripts/predict.py \
   --precision fp32
 ```
 
-With rotation Test-Time Augmentation (TTA) — ~5 s on MacBook Pro M5 Pro, macOS 26.5.1 (25F80):
+With rotation Test-Time Augmentation (TTA) — ~3 s on MacBook Pro M5 Pro, macOS 26.5.1 (25F80):
 
 ```bash
 python scripts/predict.py \
