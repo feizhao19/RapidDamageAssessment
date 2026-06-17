@@ -1,0 +1,144 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =============================================================================
+# Virtual environments & secrets
+# =============================================================================
+.env
+.env.*
+.venv/
+venv/
+env/
+*.pem
+*.key
+credentials.json
+secrets/
+
+# =============================================================================
+# IDE & OS
+# =============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# Jupyter
+# =============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# =============================================================================
+# Model weights & checkpoints (large binaries)
+# =============================================================================
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.safetensors
+*.bin
+*.mar
+checkpoints/*
+!checkpoints/.gitkeep
+!checkpoints/README.md
+
+# ViPDE package source (distributed separately; not open-sourced in this repo)
+vipde/*
+!vipde/.gitkeep
+!vipde/README.md
+
+# =============================================================================
+# Data: images, masks, splits, test outputs
+# =============================================================================
+# Ignore all data files by default
+data/**/*
+!data/**/.gitkeep
+!data/**/README.md
+
+# Image formats (anywhere in repo)
+*.png
+!docs/post_damage_overlay.png
+!docs/LA-pre-disaster.png
+!docs/LA-post-disaster.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.webp
+*.tif
+*.tiff
+*.jp2
+*.svg
+
+# Path list files often contain machine-specific absolute paths
+data/splits/*.txt
+
+# =============================================================================
+# Experiment outputs & logs
+# =============================================================================
+outputs/
+output/
+results/
+exp_*/
+SI_EXP/
+SI_EXP_*/
+logs/
+*.log
+*.csv
+wandb/
+runs/
+tensorboard/
+events.out.tfevents.*
+
+# Inference / visualization artifacts
+*_pre_processed.png
+*_post_processed.png
+*_damage_mask*.png
+*_panel.png
+*_color.png
+
+# =============================================================================
+# Archives & large files
+# =============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# =============================================================================
+# Local / scratch
+# =============================================================================
+tmp/
+temp/
+.cache/
+scratch/
+code.py.bak
