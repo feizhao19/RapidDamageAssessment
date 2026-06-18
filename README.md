@@ -25,6 +25,18 @@ Example NOAA ERI image pair and ViPDE damage assessment result for the **Marquez
 | `docs/LA-post-disaster.png` | Post-disaster imagery |
 | `docs/post_damage_overlay.png` | Prediction overlay |
 
+Example NOAA ERI image pair and ViPDE damage assessment result for the **Potero Canyon area in Pacific Palisades, Los Angeles, California 90272** (~80–90 acres; [George Wolfberg Park at Potero Canyon, Alma Real Dr, Pacific Palisades, CA 90272](https://www.google.com/maps/search/?api=1&query=George+Wolfberg+Park+at+Potero+Canyon,+Alma+Real+Dr,+Pacific+Palisades,+CA+90272)).
+
+| Pre-disaster | Post-disaster | Predicted damage overlay |
+|:---:|:---:|:---:|
+| ![Pre-disaster](docs/LA_pre_disaster.png) | ![Post-disaster](docs/LA_post_disaster.png) | ![Damage overlay](docs/pre_damage_overlay_legend.png) |
+
+| File | Role |
+|------|------|
+| `docs/LA_pre_disaster.png` | Pre-disaster reference |
+| `docs/LA_post_disaster.png` | Post-disaster imagery |
+| `docs/pre_damage_overlay_legend.png` | Prediction overlay with legend |
+
 **Imagery source — NOAA Emergency Response Imagery (ERI)**
 
 - High-resolution post-disaster aerial photos from NOAA aircraft after federally declared disasters.

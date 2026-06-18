@@ -87,6 +87,9 @@ data/**/*
 !docs/post_damage_overlay.png
 !docs/LA-pre-disaster.png
 !docs/LA-post-disaster.png
+!docs/LA_pre_disaster.png
+!docs/LA_post_disaster.png
+!docs/pre_damage_overlay_legend.png
 *.jpg
 *.jpeg
 *.gif
