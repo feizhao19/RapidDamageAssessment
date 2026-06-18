@@ -13,7 +13,7 @@ Given a pair of pre-disaster and post-disaster satellite images, ViPDE leverages
 
 ## Sample test data
 
-Two [NOAA ERI](https://storms.ngs.noaa.gov/) pre/post image pairs from the **California Fire (2025)** event with ViPDE damage assessment results from **Potero Canyon** and **Marquez Knolls** in Pacific Palisades, Los Angeles, CA 90272. For an **interactive demo** with **slider comparison** and **community switching**, see the [**ViPDE project page**](https://feizhao19.github.io/#project-building-damage).
+Two [NOAA ERI](https://storms.ngs.noaa.gov/) pre/post image pairs from the **California Fire (2025)** event, together with ViPDE damage assessment results for **Potero Canyon** and **Marquez Knolls** in Pacific Palisades, Los Angeles, CA 90272. For an **interactive demo** with **slider comparison** and **community switching**, see the [**ViPDE project page**](https://feizhao19.github.io/#project-building-damage).
 
 **Potero Canyon, Pacific Palisades, LA, CA** (~106 acres; [George Wolfberg Park at Potero Canyon, Alma Real Dr](https://www.google.com/maps/search/?api=1&query=George+Wolfberg+Park+at+Potero+Canyon,+Alma+Real+Dr,+Pacific+Palisades,+CA+90272))
 
