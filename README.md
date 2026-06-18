@@ -15,13 +15,13 @@ Given a pair of pre-disaster and post-disaster satellite images, ViPDE leverages
 
 Two NOAA ERI pre/post image pairs with ViPDE damage assessment results from **Potero Canyon** and **Marquez Knolls** in Pacific Palisades, Los Angeles, CA 90272.
 
-**Potero Canyon, Pacific Palisades, Los Angeles, CA 90272** (~106 acres; [George Wolfberg Park at Potero Canyon, Alma Real Dr](https://www.google.com/maps/search/?api=1&query=George+Wolfberg+Park+at+Potero+Canyon,+Alma+Real+Dr,+Pacific+Palisades,+CA+90272))
+**Potero Canyon, Pacific Palisades, LA, CA** (~106 acres; [George Wolfberg Park at Potero Canyon, Alma Real Dr](https://www.google.com/maps/search/?api=1&query=George+Wolfberg+Park+at+Potero+Canyon,+Alma+Real+Dr,+Pacific+Palisades,+CA+90272))
 
 | Pre-disaster | Post-disaster | Predicted damage overlay |
 |:---:|:---:|:---:|
 | ![Pre-disaster](docs/Potero_LA_pre_disaster.png) | ![Post-disaster](docs/Potero_LA_post_disaster.png) | ![Damage overlay](docs/Potero_pre_damage_overlay_legend.png) |
 
-**Marquez Knolls, Pacific Palisades, Los Angeles, CA 90272** (~175 acres; [17080 Sunset Blvd](https://www.google.com/maps/search/?api=1&query=17080+Sunset+Blvd,+Pacific+Palisades,+CA+90272))
+**Marquez Knolls, Pacific Palisades, LA, CA** (~175 acres; [17080 Sunset Blvd](https://www.google.com/maps/search/?api=1&query=17080+Sunset+Blvd,+Pacific+Palisades,+CA+90272))
 
 | Pre-disaster | Post-disaster | Predicted damage overlay |
 |:---:|:---:|:---:|
