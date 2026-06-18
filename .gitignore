@@ -84,12 +84,12 @@ data/**/*
 
 # Image formats (anywhere in repo)
 *.png
-!docs/post_damage_overlay.png
-!docs/LA-pre-disaster.png
-!docs/LA-post-disaster.png
-!docs/LA_pre_disaster.png
-!docs/LA_post_disaster.png
-!docs/pre_damage_overlay_legend.png
+!docs/Marquez_post_damage_overlay.png
+!docs/Marquez_LA_pre_disaster.png
+!docs/Marquez_LA_post_disaster.png
+!docs/Potero_LA_pre_disaster.png
+!docs/Potero_LA_post_disaster.png
+!docs/Potero_pre_damage_overlay_legend.png
 *.jpg
 *.jpeg
 *.gif

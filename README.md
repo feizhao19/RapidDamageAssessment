@@ -13,29 +13,34 @@ Given a pair of pre-disaster and post-disaster satellite images, ViPDE leverages
 
 ## Sample test data
 
-Example NOAA ERI image pair and ViPDE damage assessment result for the **Marquez Knolls neighborhood in Pacific Palisades, Los Angeles, California 90272** (~175 acres; [17080 Sunset Blvd, Pacific Palisades, CA 90272](https://www.google.com/maps/search/?api=1&query=17080+Sunset+Blvd,+Pacific+Palisades,+CA+90272)).
+Two NOAA ERI pre/post image pairs with ViPDE damage assessment results from **Pacific Palisades, Los Angeles, CA 90272**.
+
+**Potero Canyon** (~106 acres; [George Wolfberg Park at Potero Canyon, Alma Real Dr](https://www.google.com/maps/search/?api=1&query=George+Wolfberg+Park+at+Potero+Canyon,+Alma+Real+Dr,+Pacific+Palisades,+CA+90272))
 
 | Pre-disaster | Post-disaster | Predicted damage overlay |
 |:---:|:---:|:---:|
-| ![Pre-disaster](docs/LA-pre-disaster.png) | ![Post-disaster](docs/LA-post-disaster.png) | ![Damage overlay](docs/post_damage_overlay.png) |
+| ![Pre-disaster](docs/Potero_LA_pre_disaster.png) | ![Post-disaster](docs/Potero_LA_post_disaster.png) | ![Damage overlay](docs/Potero_pre_damage_overlay_legend.png) |
 
-| File | Role |
-|------|------|
-| `docs/LA-pre-disaster.png` | Pre-disaster reference |
-| `docs/LA-post-disaster.png` | Post-disaster imagery |
-| `docs/post_damage_overlay.png` | Prediction overlay |
-
-Example NOAA ERI image pair and ViPDE damage assessment result for the **Potero Canyon area in Pacific Palisades, Los Angeles, California 90272** (~80–90 acres; [George Wolfberg Park at Potero Canyon, Alma Real Dr, Pacific Palisades, CA 90272](https://www.google.com/maps/search/?api=1&query=George+Wolfberg+Park+at+Potero+Canyon,+Alma+Real+Dr,+Pacific+Palisades,+CA+90272)).
+**Marquez Knolls** (~175 acres; [17080 Sunset Blvd, Pacific Palisades, CA 90272](https://www.google.com/maps/search/?api=1&query=17080+Sunset+Blvd,+Pacific+Palisades,+CA+90272))
 
 | Pre-disaster | Post-disaster | Predicted damage overlay |
 |:---:|:---:|:---:|
-| ![Pre-disaster](docs/LA_pre_disaster.png) | ![Post-disaster](docs/LA_post_disaster.png) | ![Damage overlay](docs/pre_damage_overlay_legend.png) |
+| ![Pre-disaster](docs/Marquez_LA_pre_disaster.png) | ![Post-disaster](docs/Marquez_LA_post_disaster.png) | ![Damage overlay](docs/Marquez_post_damage_overlay.png) |
+
+**Benchmark — Marquez Knolls** (`--img-size 1024`, Test-Time Augmentation / TTA with `--tta-rotate`)
+
+| Platform | Hardware | macOS / OS | Runtime |
+|----------|----------|------------|---------|
+| macOS | MacBook Pro **M5 Pro** (MPS) | **26.5.1 (25F80)** | **~3 s** |
 
 | File | Role |
 |------|------|
-| `docs/LA_pre_disaster.png` | Pre-disaster reference |
-| `docs/LA_post_disaster.png` | Post-disaster imagery |
-| `docs/pre_damage_overlay_legend.png` | Prediction overlay with legend |
+| `docs/Potero_LA_pre_disaster.png` | Potero Canyon — pre-disaster reference |
+| `docs/Potero_LA_post_disaster.png` | Potero Canyon — post-disaster imagery |
+| `docs/Potero_pre_damage_overlay_legend.png` | Potero Canyon — prediction overlay with legend |
+| `docs/Marquez_LA_pre_disaster.png` | Marquez Knolls — pre-disaster reference |
+| `docs/Marquez_LA_post_disaster.png` | Marquez Knolls — post-disaster imagery |
+| `docs/Marquez_post_damage_overlay.png` | Marquez Knolls — prediction overlay |
 
 **Imagery source — NOAA Emergency Response Imagery (ERI)**
 
@@ -43,12 +48,6 @@ Example NOAA ERI image pair and ViPDE damage assessment result for the **Potero 
 - California Fire 2025 imagery is available.
 - Portal: https://storms.ngs.noaa.gov/
 - Viewer: https://oceanservice.noaa.gov/hazards/emergency-response-imagery.html
-
-**Benchmark (bundled pair, `--img-size 1024`, Test-Time Augmentation / TTA with `--tta-rotate`)**
-
-| Platform | Hardware | macOS / OS | Runtime |
-|----------|----------|------------|---------|
-| macOS | MacBook Pro **M5 Pro** (MPS) | **26.5.1 (25F80)** | **~3 s** |
 
 ## Project layout
 
@@ -108,8 +107,8 @@ python scripts/check_device.py
 
 ```bash
 python scripts/predict.py \
-  --pre-image docs/LA-pre-disaster.png \
-  --post-image docs/LA-post-disaster.png \
+  --pre-image docs/Marquez_LA_pre_disaster.png \
+  --post-image docs/Marquez_LA_post_disaster.png \
   --weights checkpoints/vipde_vitb_damage_v1.pth \
   --output-dir outputs/linux_test \
   --device auto \
@@ -121,8 +120,8 @@ With rotation Test-Time Augmentation (TTA):
 
 ```bash
 python scripts/predict.py \
-  --pre-image docs/LA-pre-disaster.png \
-  --post-image docs/LA-post-disaster.png \
+  --pre-image docs/Marquez_LA_pre_disaster.png \
+  --post-image docs/Marquez_LA_post_disaster.png \
   --weights checkpoints/vipde_vitb_damage_v1.pth \
   --output-dir outputs/linux_test_tta \
   --device auto \
@@ -165,8 +164,8 @@ python scripts/check_device.py
 
 ```bash
 python scripts/predict.py \
-  --pre-image docs/LA-pre-disaster.png \
-  --post-image docs/LA-post-disaster.png \
+  --pre-image docs/Marquez_LA_pre_disaster.png \
+  --post-image docs/Marquez_LA_post_disaster.png \
   --weights checkpoints/vipde_vitb_damage_v1.pth \
   --output-dir outputs/mac_test \
   --device auto \
@@ -177,8 +176,8 @@ With rotation Test-Time Augmentation (TTA) — ~3 s on MacBook Pro M5 Pro, macOS
 
 ```bash
 python scripts/predict.py \
-  --pre-image docs/LA-pre-disaster.png \
-  --post-image docs/LA-post-disaster.png \
+  --pre-image docs/Marquez_LA_pre_disaster.png \
+  --post-image docs/Marquez_LA_post_disaster.png \
   --weights checkpoints/vipde_vitb_damage_v1.pth \
   --output-dir outputs/mac_test_tta \
   --device auto \
@@ -264,8 +263,8 @@ device = resolve_device("auto")
 pixel_mean = pixel_std = [0.5, 0.5, 0.5]
 
 weights = "checkpoints/vipde_vitb_damage_v1.pth"
-pre_path = "docs/LA-pre-disaster.png"
-post_path = "docs/LA-post-disaster.png"
+pre_path = "docs/Marquez_LA_pre_disaster.png"
+post_path = "docs/Marquez_LA_post_disaster.png"
 
 model = ViPDE.from_pretrained(
     weights_path=weights,
