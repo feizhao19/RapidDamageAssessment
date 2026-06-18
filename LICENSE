@@ -1,5 +1,5 @@
 ViPDE — Visual Prompt Damage Evaluation
-Research and Government Use License
+Research, Government, and Humanitarian Use License (RGHL v1.0)
 
 Copyright (c) 2026 Fei Zhao
 
@@ -17,6 +17,7 @@ prior written permission for:
   • Academic research
   • Government evaluation (including federal, state, and local agencies)
   • Educational purposes
+  • Humanitarian aid and public safety evaluation
   • Nonprofit organizations with missions in disaster response, emergency
     management, humanitarian aid, or public safety
 
@@ -28,10 +29,28 @@ The following are strictly prohibited without prior written permission
 from the copyright holder:
 
   • Commercial use
-  • Contractor or vendor use on behalf of a commercial entity
+  • Contractor or vendor use for a commercial purpose
   • Third-party redistribution of the software, model code, or derivatives
   • Deployment in commercial products or operational production systems
     (including paid services, SaaS, or contractor-delivered solutions)
+
+Government contractors and vendors acting solely on behalf of a government
+agency for government evaluation may request authorization under separate
+written terms. Such authorization does not extend to commercial client work,
+resale, redistribution, or operational production for a for-profit operator.
+
+-----------------------------------------------------------------------------
+
+ATTRIBUTION
+
+Any publication, report, presentation, slide deck, website, or derivative
+work that uses this software, model outputs, or related documentation must
+provide clear attribution to:
+
+  Fei Zhao, ViPDE (Visual Prompt Damage Evaluation)
+
+Academic use should also cite the associated research publication when
+available.
 
 -----------------------------------------------------------------------------
 
@@ -69,7 +88,8 @@ DEALINGS IN THE SOFTWARE.
 
 CONTACT
 
-For commercial licensing, contractor use, redistribution, operational
+For commercial licensing, contractor use for commercial purposes,
+government contractor authorization, redistribution, operational
 deployment, or access to model weights:
 
   Fei Zhao
